@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Convert String</title>
+</head>
+<body>
+<p> This works!</p>
+	<form class="characters" action="{% url 'conversion:convert' %}" method="POST">
+		{% csrf_token %}
+		Input the String:<br>
+		<input type="text" name="words"><br>
+		<input type="submit" value="Submit">
+	</form>
+
+	<p>---------------------</p>
+	
+	<p>{{ posts.words }}</p>
+	
+</body>
+</html>
