@@ -40,35 +40,33 @@ postgres=# CREATE USER flood_user WITH PASSWORD 'Aezakmicar1';
 
 5. To connect with the Postgresql database, follow this [guide](https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-django-application-on-ubuntu-14-04) here
 
-6. Now, when creating a USER for the database, match the database name, username and password from *DATABASE* Section in the *settings.py* file
 
-
-7. For python 3, install virtual environment using
+6. For python 3, install virtual environment using
 ```
 sudo pip3 install virtualenv
 ```
-8. Move into the directory of the cloned django project
+7. Move into the directory of the cloned django project
 
 ```
  cd ~/(project_name)
 ```
 
-9. create a virtual environment to store our Django project's Python requirements by typing:
+8. create a virtual environment to store our Django project's Python requirements by typing:
 ```
 $ virtualenv myprojectenv
 ```
 
-10. Activate virtual environment using
+9. Activate virtual environment using
 ```
 $ source myprojectenv/bin/activate
 ```
 
-11. you can install Django with pip
+10. you can install Django with pip
 ```
 $ pip3 install django
 ```
 
-12. Install the psycopg2 package
+11. Install the psycopg2 package
 ```
 $ pip install django psycopg2
 ```
