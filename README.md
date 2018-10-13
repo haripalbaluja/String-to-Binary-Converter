@@ -12,7 +12,7 @@ Django 2.1
 Postgresql
 Python
 ```
-...
+
 
 ### Installing
 
@@ -21,6 +21,7 @@ Python
    $ sudo apt-get update
    $ sudo apt-get install python3-pip python3-dev libpq-dev postgresql postgresql contrib
 ```
+
 
 2. Log into an interactive Postgres session by typing:
 ```
@@ -32,6 +33,7 @@ $ sudo -u postgres psql
 postgres=# CREATE DATABASE flood_data;
 ```
 
+
 4. Next, we will create a database user which we will use to connect to and interact with the database.
 ```
 postgres=# CREATE USER flood_user WITH PASSWORD 'Aezakmicar1';
@@ -41,12 +43,13 @@ postgres=# CREATE USER flood_user WITH PASSWORD 'Aezakmicar1';
 5. To connect with the Postgresql database, follow this [guide](https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-django-application-on-ubuntu-14-04) here
 
 
+
 6. For python 3, install virtual environment using
 ```
 sudo pip3 install virtualenv
 ```
-7. Move into the directory of the cloned django project
 
+7. Move into the directory of the cloned django project
 ```
  cd ~/(project_name)
 ```
@@ -66,11 +69,12 @@ $ source myprojectenv/bin/activate
 $ pip3 install django
 ```
 
+
 11. Install the psycopg2 package
 ```
 $ pip install django psycopg2
 ```
-...
+
 
 ## Starting the project
 
