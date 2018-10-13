@@ -104,7 +104,7 @@ $ pip install django psycopg2
 python manage.py runserver
 ```
 
-...
+
 
 ## Built With
 
