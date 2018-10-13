@@ -8,74 +8,87 @@ Clone the repository into your system by browsing to [this repository](https://w
 
 ### Prerequisites
 ```
+Linux System
 Django 2.1
 Postgresql
 Python
+d3.js - A javascript library
 ```
 
 
 ### Installing
 
-1. To install Postgresql
+1. Install the d3 package via npm
+```
+npm install d3
+npm install d3-hexbin
+npm install leaflet
+```
+
+
+2. To install Postgresql
 ```
    $ sudo apt-get update
    $ sudo apt-get install python3-pip python3-dev libpq-dev postgresql postgresql contrib
 ```
 
 
-2. Log into an interactive Postgres session by typing:
+3. Log into an interactive Postgres session by typing:
 ```
 $ sudo -u postgres psql
 ```
 
 
-3. Create DATABASE using
+4. Create DATABASE using
 ```
 postgres=# CREATE DATABASE flood_data;
 ```
 
 
-4. Next, we will create a database user which we will use to connect to and interact with the database.
+5. Next, we will create a database user which we will use to connect to and interact with the database.
 ```
 postgres=# CREATE USER flood_user WITH PASSWORD 'Aezakmicar1';
 ```
 
 
-5. To connect with the Postgresql database, follow this [guide](https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-django-application-on-ubuntu-14-04) here
+6. To connect with the Postgresql database, follow this [guide](https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-django-application-on-ubuntu-14-04) here
 
 
+7. Now, when creating a USER for the database, match the database name, username and password from *DATABASE* Section in the *settings.py* file
 
-6. For python 3, install virtual environment using
+
+8. For python 3, install virtual environment using
 ```
 sudo pip3 install virtualenv
 ```
 
 
-7. Move into the directory of the cloned django project
+9. Move into the directory of the cloned django project
+
 ```
  cd ~/(project_name)
 ```
 
 
-8. create a virtual environment to store our Django project's Python requirements by typing:
+10. create a virtual environment to store our Django project's Python requirements by typing:
 ```
 $ virtualenv myprojectenv
 ```
 
 
-9. Activate virtual environment using
+11. Activate virtual environment using
 ```
 $ source myprojectenv/bin/activate
 ```
 
 
-10. you can install Django with pip
+12. you can install Django with pip
 ```
 $ pip3 install django
 ```
 
 
-11. Install the psycopg2 package
+13. Install the psycopg2 package
 ```
 $ pip install django psycopg2
 ```
@@ -85,10 +98,9 @@ $ pip install django psycopg2
 
 1. Browse to the directory of the project in your terminal
 
-2. Now you're good to go, fire up the application from 
-```
-python manage.py runserver
-```
+
+2. Now you're good to go, fire up the application from _python manage.py runserver_ 
+...
 
 ## Built With
 
