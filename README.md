@@ -99,7 +99,11 @@ $ pip install django psycopg2
 1. Browse to the directory of the project in your terminal
 
 
-2. Now you're good to go, fire up the application from _python manage.py runserver_ 
+2. Now you're good to go, fire up the application from
+```
+python manage.py runserver
+```
+
 ...
 
 ## Built With
