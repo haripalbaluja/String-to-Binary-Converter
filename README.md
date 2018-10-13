@@ -114,9 +114,3 @@ python manage.py runserver
 
 ...
 
-## Built With
-
-
-## Contributing
-
-## Acknowledgements
