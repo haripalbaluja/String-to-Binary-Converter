@@ -3,11 +3,12 @@ We here at Rescue Maps strive to help those caught in distress situations by cre
 
 
 ## Getting Started
-Clone the repository into your system by browsing to [this repository](https://www.github.com/deveshd2k/weather)
+Clone the repository into your system by browsing to [this repository](https://www.github.com/deveshd2k/weather-1)
 ...
 
 ### Prerequisites
 ```
+npm
 Linux System
 Django 2.1
 Postgresql
